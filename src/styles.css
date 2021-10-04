@@ -15,6 +15,26 @@ body {
     height: 100vh;
 /*     padding-top: 4rem; */
 }
+
+#conocenos{
+  background-color: #EB7D82;
+}
+
+#campania{
+  background-color: #6886B8;
+}
+
+#misionyvision{
+  background-color: #EB7D82;
+
+}
+
+
+
+#contacto{
+  background-color: #6886B8;
+}
+
 #modal{
   display: none;
 }
