@@ -9,6 +9,8 @@ import { ReclamosComponent } from './pages/reclamos/reclamos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { MisionyvisionComponent } from './pages/misionyvision/misionyvision.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { ModalComponent } from './shared/modal/modal.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { InicioComponent } from './pages/inicio/inicio.component';
     ReclamosComponent,
     ContactoComponent,
     MisionyvisionComponent,
-    InicioComponent
+    InicioComponent,
+    ModalComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,108 @@
+<!-- Button trigger modal -->
+<button
+  id="modal"
+  type="button"
+  class="btn btn-primary"
+  data-bs-toggle="modal"
+  data-bs-target="#staticBackdrop"
+>
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">
+          ¡Unete al mejor equipo!
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form
+          action="https://formsubmit.co/eder.cornejo.d@gmail.com"
+          method="POST"
+        >
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Nombre Completo*"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Correo Electrónico*"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              name="address"
+              placeholder="Dirección*"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              placeholder="Teléfono*"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+              required
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+              required
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Acepto términos y condiciones</label
+            >
+          </div>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="http://localhost:4200/" />
+          <div class="text-center">
+            <button
+              (click)="sendform()"
+              type="submit"
+              class="btn btn-form ps-5 pe-5"
+            >
+              Unirte
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

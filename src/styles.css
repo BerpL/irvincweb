@@ -1,9 +1,153 @@
-html {
-    scroll-behavior: smooth;
-  }
+
+  html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 .fullheight{
     height: 100vh;
 /*     padding-top: 4rem; */
+}
+#modal{
+  display: none;
+}
+.btn-form {
+  background-color: #eb232f;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-form:hover {
+  background-color: #c5101c;
+  color: white;
+  font-weight: 600;
+}
+.contenedor {
+  position: relative;
+  display: inline-block;
+}
+.texto-encima {
+text-align: center;
+  position: absolute;
+  transform: rotate(-4deg);
+  top: 30px;
+  left: -10px;
+  background-color: #eb232f;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  width: 350px;
+}
+.centrado {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 48px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.centrado2 {
+  position: absolute;
+  top: 48%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 48px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.img-text {
+  background-color: #053692;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.img-text:first-of-type {
+  /* For increasing performance 
+                         ID/Class should've been used. 
+                         For a small demo 
+                         it's okaish for now */
+  animation: showup 10s infinite;
+}
+
+.img-text:last-of-type {
+  width: 0px;
+  animation: reveal 10s infinite;
+}
+
+.img-text:last-of-type span {
+  margin-left: -530px;
+  animation: slidein 10s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 530px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 530px;
+  }
+}
+#conocenos{
+
 }
 .img-banner{
     height: 100vh;
@@ -23,9 +167,10 @@ html {
   background-image:url('assets/img/img3.jpg');
   filter:brightness(0.4);
 }
+
 /* NAVBAR */
 .bg-navbar{
-    /* background-color: rgba(0, 0, 0,.4); */
+    background-color: rgba(0, 0, 0,.4);
 }
 .list {
     list-style: none;
@@ -83,3 +228,34 @@ html {
   a:active {
     text-decoration: none;
   }
+
+  /* Footer */
+.footer {
+  height: 400px;
+  background: linear-gradient(-7deg, #053692 395px, transparent 396px),
+    linear-gradient(7deg, #eb232f 395px, #fff 396px);
+}
+
+.footer-right {
+  padding-top: 4.5rem;
+  color: white;
+}
+
+.footer-left {
+  padding-left: 4rem;
+  padding-top: 10rem;
+  color: white;
+}
+
+.contact-data {
+  padding-top: 2rem;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.maps {
+  width: 400px;
+  height: 250px;
+}
