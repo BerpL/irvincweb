@@ -162,9 +162,15 @@ text-align: center;
     width: 530px;
   }
 }
-#conocenos{
-
+.img-candidate{
+  width: 70%;
 }
+
+.p-conocenos {
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+
 .img-banner{
     height: 100vh;
 }
@@ -279,4 +285,61 @@ text-align: center;
 .maps {
   width: 400px;
   height: 250px;
+}
+
+/* responsive */
+@media only screen and (max-width: 767px) {
+  .img-candidate {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+  .p-conocenos {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .texto-encima {
+    transform: rotate(-4deg);
+    top: 20px;
+    left: 3px;
+    font-size: 15px;
+    width: 150px;
+  }
+  .centrado {
+    display: none;
+  }
+
+  .centrado2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-right {
+    display: none;
+  }
+  .centrado {
+    display: none;
+  }
+
+  .centrado2 {
+    display: none;
+  }
+  .navbar-nav .item {
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 15px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  .navbar-nav .item:hover {
+    font-size: .8rem;
+    font-weight: 600;
+  }
+  
+  .navbar-nav .item.active {
+    font-size: .8rem;
+    font-weight: 600;
+  }
+  
 }
