@@ -31,12 +31,12 @@ body {
 }
 
 #conocenos {
-  background: linear-gradient(-15deg, #eb232f 400px, transparent 202px),
+  background: linear-gradient(-10deg, #eb232f 400px, transparent 202px),
     linear-gradient(50deg, #053692 700px, #053692 702px);
 }
 
 #campania {
-  background: linear-gradient(28deg, #053692 700px, transparent 702px),
+  background: linear-gradient(18deg, #053692 700px, transparent 702px),
     linear-gradient(-28deg, #eb232f 700px, #eb232f 702px);
 }
 
