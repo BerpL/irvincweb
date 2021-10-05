@@ -37,47 +37,22 @@
           action="https://formsubmit.co/eder.cornejo.d@gmail.com"
           method="POST"
         >
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              name="name"
-              placeholder="Nombre Completo*"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              placeholder="Correo Electrónico*"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="address"
-              name="address"
-              placeholder="Dirección*"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="tel"
-              class="form-control"
-              id="phone"
-              name="phone"
-              placeholder="Teléfono*"
-              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
-              required
-            />
-          </div>
+        <div class="form-floating mb-3">
+          <input type="text" name="name" class="form-control" id="floatingName" placeholder="name@example.com" required>
+          <label for="floatingName">Nombre completo</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+          <label for="floatingEmail">Correo electrónico</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" name="address" class="form-control" id="floatingAddress" placeholder="name@example.com" required>
+          <label for="floatingAddress">Dirección</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="tel" name="phone" class="form-control" id="floatingPhone" placeholder="name@example.com" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+          <label for="floatingPhone">Teléfono</label>
+        </div>
           <div class="mb-3 form-check">
             <input
               type="checkbox"
