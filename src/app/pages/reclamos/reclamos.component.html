@@ -2,39 +2,44 @@
     <div class="col-12 ">
         <div class="row justify-content-md-center">
             <div class="col-md-4 text-center">
-                <h3>Reclamos</h3>
-                <form
-                action="https://formsubmit.co/eder.cornejo.d@gmail.com"
-                method="POST"
-              >
-              <div class="form-floating mb-3">
-                <input type="text" name="name" class="form-control" id="floatingName" placeholder="name@example.com" required>
-                <label for="floatingName">Nombre completo</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
-                <label for="floatingEmail">Correo electrónico</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="tel" name="phone" class="form-control" id="floatingPhone" placeholder="name@example.com" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
-                <label for="floatingPhone">Teléfono</label>
-              </div>
-              <div class="form-floating">
-                <textarea class="form-control" name="reclamo" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
-                <label for="floatingTextarea2">Reclamo</label>
-              </div>
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value="http://localhost:4200/" />
-                <div class="text-center">
-                  <button
-                    type="submit"
-                    class="btn btn-form mt-3 ps-5 pe-5"
-                  >
-                    Unirte
-                  </button>
+              <div class="card rounded-3 border border-dark border-3">
+                <div class="card-body">
+                  <form
+                  class="p-5"
+                  action="https://formsubmit.co/eder.cornejo.d@gmail.com"
+                  method="POST"
+                >
+                <div class="form-floating mb-3">
+                  <input type="text" name="name" class="form-control" id="floatingName" placeholder="name@example.com" required>
+                  <label for="floatingName">Nombre completo</label>
                 </div>
-              </form>
+                <div class="form-floating mb-3">
+                  <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+                  <label for="floatingEmail">Correo electrónico</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="tel" name="phone" class="form-control" id="floatingPhone" placeholder="name@example.com" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                  <label for="floatingPhone">Teléfono</label>
+                </div>
+                <div class="form-floating">
+                  <textarea class="form-control" name="reclamo" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+                  <label for="floatingTextarea2">Reclamo</label>
+                </div>
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_next" value="http://localhost:4200/" />
+                  <div class="text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-form mt-3 ps-5 pe-5"
+                    >
+                      Unirte
+                    </button>
+                  </div>
+                </form>
+                </div>
+              </div>
+               
             </div>
         </div>
     </div>

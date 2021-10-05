@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-navbar fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#inicio">
-      <img src="../../../assets/img/logo.png" alt="logoirvinc" width="150" />
+    <a class="navbar-brand pointer" (click)="scroll('inicio')">
+      <img src="../../../assets/img/logo.png" alt="logoirvinc" width="250" />
     </a>
     <button
       class="navbar-toggler"
@@ -15,26 +15,23 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#inicio"
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-items text-center">
+        <li class="nav-item ps-3 pe-3">
+          <a class="nav-link pointer" aria-current="page" [class.selected]="flaginicio" (click)="scroll('inicio')"
             >Inicio</a
           >
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#conocenos">Conocenos</a>
+        <li class="nav-item ps-3 pe-3">
+          <a class="nav-link pointer" [class.selected]="flagconocenos" (click)="scroll('conocenos')">Conocenos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#campania">Campaña</a>
+        <li class="nav-item ps-3 pe-3">
+          <a class="nav-link pointer" [class.selected]="flagcampania" (click)="scroll('campania')">Campaña</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#misionyvision">Misión y Visión</a>
+        <li class="nav-item ps-3 pe-3">
+          <a class="nav-link pointer" [class.selected]="flagreclamos" (click)="scroll('reclamos')">Reclamos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#reclamos">Reclamos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
+        <li class="nav-item ps-3 pe-3">
+          <a class="nav-link pointer" [class.selected]="flagcontacto" (click)="scroll('contacto')">Contacto</a>
         </li>
       </ul>
       <div class="d-flex justify-content-center">
@@ -62,4 +59,5 @@
     </div>
   </div>
 </nav>
+
 
