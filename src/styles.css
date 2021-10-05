@@ -16,6 +16,10 @@ body {
 /*     padding-top: 4rem; */
 }
 
+.form-control{
+  border: 1px solid #053692;
+}
+
 #conocenos{
   background-color: #FDD6D8;
 }
@@ -253,7 +257,7 @@ text-align: center;
 
   /* CAMPAÑA */
   .facebook-iframe{
-    padding-top: 7rem;
+    padding-top: 5rem;
   }
 
   /* Footer */
