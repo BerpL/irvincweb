@@ -1,18 +1,23 @@
 
 <div class="fullheight d-flex align-items-center justify-content-center contenedor" id="reclamos">
     <div class="texto-encima2">Reclamos</div>
-    <div class="col-12">      
+    <div class="col-12 reclamos-container">      
         <div class="row justify-content-md-center">
-            <div class="col-md-4 text-center">
+            <div class="col-md-8 text-center">
               <div class="card rounded-3 border border-dark border-3">
                 <div class="card-body">
                   <form
-                  class="p-5"
+                  class="form-reclamo"
                   action="https://formsubmit.co/eder.cornejo.d@gmail.com"
                   method="POST"
                 >
+                <h3>Reclamos</h3>
                 <div class="form-floating mb-3">
-                  <input type="text" name="name" class="form-control" id="floatingName" placeholder="name@example.com" required>
+                  <input type="text" name="asunto" class="form-control" id="floatingIssue" placeholder="name@example.com" required>
+                  <label for="floatingIssue">Asunto</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" name="nombre" class="form-control" id="floatingName" placeholder="name@example.com" required>
                   <label for="floatingName">Nombre completo</label>
                 </div>
                 <div class="form-floating mb-3">
@@ -20,7 +25,7 @@
                   <label for="floatingEmail">Correo electrónico</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="tel" name="phone" class="form-control" id="floatingPhone" placeholder="name@example.com" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                  <input type="tel" name="telefono" class="form-control" id="floatingPhone" placeholder="name@example.com" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                   <label for="floatingPhone">Teléfono</label>
                 </div>
                 <div class="form-floating">
@@ -33,9 +38,9 @@
                   <div class="text-center">
                     <button
                       type="submit"
-                      class="btn btn-form mt-3 ps-5 pe-5"
+                      class="btn btn-form mt-3 ps-5 pe-5 w-50"
                     >
-                      Unirte
+                      Enviar
                     </button>
                   </div>
                 </form>

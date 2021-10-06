@@ -241,13 +241,13 @@ background: linear-gradient(to top, #FFFFFF 0%, #eb232f 100%);
   padding-right: 32px !important;
 }
 .social-icon {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 20px;
   margin-right: 11px;
   cursor: pointer;
@@ -294,29 +294,39 @@ a:active {
 
 /* CAMPAÑA */
 .facebook-iframe {
+  height: 100vh;
   padding-top: 8rem;
+}
+
+/* RECLAMOS */
+.reclamos-container{
+  padding-top: 5rem;
+}
+.form-reclamo{
+  padding: 3rem;
+  height: 800 !important;
 }
 
 /* Footer */
 .footer {
-  height: 550px;
-  background: linear-gradient(-8deg, #053692 540px, transparent 541px),
-    linear-gradient(8deg, #eb232f 540px, #fff 541px);
+  height: 700px;
+  background: linear-gradient(-8deg, #053692 690px, transparent 690px),
+    linear-gradient(8deg, #eb232f 690px, #fff 690px);
 }
 
 .footer-right {
-  padding-top: 14rem;
+  padding-top: 22rem;
   color: white;
 }
 
 .footer-left {
   padding-left: 4rem;
-  padding-top: 14rem;
+  padding-top: 22rem;
   color: white;
 }
 
 .footer-mid {
-  padding-top: 14rem;
+  padding-top: 22rem;
   color: white;
 }
 
