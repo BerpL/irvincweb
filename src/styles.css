@@ -30,6 +30,11 @@ body {
   border: 1px solid #053692;
 }
 
+.carousel-padding{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 #misionyvision{
   background: linear-gradient(-18deg, #eb232f 700px, transparent 702px),
     linear-gradient(18deg, #053692 700px, #053692 702px);
