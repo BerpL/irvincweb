@@ -17,6 +17,9 @@ body {
   height: 100vh;
   /*     padding-top: 4rem; */
 }
+.header-container{
+  padding-top: 10rem;
+}
 .selected {
   color: #053692 !important;
   border-bottom: 5px solid #eb232f;
@@ -212,7 +215,7 @@ background: linear-gradient(to top, #FFFFFF 0%, #eb232f 100%);
 }
 
 .img-banner {
-  height: 100vh;
+  height: 95vh;
 }
 .img1 {
   background-color: rgba(0, 0, 0, 0.8);
@@ -314,6 +317,9 @@ a:active {
   padding: 3rem;
   height: 800 !important;
 }
+.reclamos-button{
+  width: 300px;
+}
 
 /* Footer */
 .footer {
@@ -396,6 +402,7 @@ a:active {
     left: 3px;
     font-size: 15px;
     width: 150px;
+    display: none;
   }
   .texto-encima2 {
     transform: rotate(-4deg);
@@ -403,6 +410,7 @@ a:active {
     left: 3px;
     font-size: 15px;
     width: 150px;
+    display: none;
   }
   .centrado {
     display: none;
@@ -441,6 +449,9 @@ a:active {
     height: 750px;
     background: linear-gradient(-8deg, #053692 740px, transparent 742px),
       linear-gradient(8deg, #eb232f 740px, #fff 742px);
+  }
+  .reclamos-button{
+    width: 200px;
   }
 }
 
