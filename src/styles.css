@@ -31,8 +31,8 @@ body {
 }
 
 .carousel-padding{
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 #misionyvision{
@@ -302,6 +302,9 @@ a:active {
   height: 100vh;
   padding-top: 8rem;
 }
+.iframe-mobile{
+  display: none;
+}
 
 /* RECLAMOS */
 .reclamos-container{
@@ -384,10 +387,17 @@ a:active {
     margin-bottom: 3rem;
   }
   .p-conocenos {
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: justify;
   }
   .texto-encima {
+    transform: rotate(-4deg);
+    top: 20px;
+    left: 3px;
+    font-size: 15px;
+    width: 150px;
+  }
+  .texto-encima2 {
     transform: rotate(-4deg);
     top: 20px;
     left: 3px;
@@ -401,15 +411,40 @@ a:active {
   .centrado2 {
     display: none;
   }
+  .carousel-padding{
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .iframe-mobile{
+    display:inline-block
+  }
+  .iframe-desktop{
+    display: none;
+  }
+  .footer-right {
+    padding-top: 0rem;
+    color: white;
+    padding: 1rem ;
+  }
+  
+  .footer-left {
+    padding-left: 0rem;
+    padding-top: 5rem;
+    color: white;
+  }
+  
+  .footer-mid {
+    padding-top: 0rem;
+    color: white;
+  }
+  .footer {
+    height: 750px;
+    background: linear-gradient(-8deg, #053692 740px, transparent 742px),
+      linear-gradient(8deg, #eb232f 740px, #fff 742px);
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-  .footer-right {
-    display: none;
-  }
-  .footer-mid{
-    display: none;
-  }
   .centrado {
     display: none;
   }
